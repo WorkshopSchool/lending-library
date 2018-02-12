@@ -58,11 +58,11 @@
 				{{#checkedout}} <span class="tool-box-borrowed">ON LOAN</span>{{/checkedout}}
 				{{^checkedout}}<a href="mailto:{{owneremail}}?subject=Tool Lending: {{tool}}"><span class="tool-box-borrow btn">BORROW</span></a>{{/checkedout}}
 				<ul>
-					<li><small>WHO / ON : </small></li>
-					<li>{{checkedoutto}} on {{checkedout}}</li>
+					<li><small>BY WHO / ON : </small></li>
+					<li>{{checkedoutto}} {{checkedout}}</li>
 					{{#tooldetails}}
 					<li><small>NOTES : </small>{{tooldetails}}</li>
-					<li><small>{{owner}}</small></li>
+					<li><small>Stored in {{owner}}</small></li>
 					{{/tooldetails}}
 				</ul>
 			</div>
