@@ -49,7 +49,7 @@
 				{{#checkedout}} <span class="tool-box-borrowed">ON LOAN</span>{{/checkedout}}
 				{{^checkedout}}<a href="https://docs.google.com/forms/d/e/1FAIpQLSd-xjQHghJOHdRfxz7jcdIJYCTFias86k00urPtD7Cyd-UfXQ/viewform"><span class="tool-box-borrow btn">BORROW</span></a>{{/checkedout}}
 				<ul>
-					<li><small>BY WHO / ON : </small></li>
+					{{#checkedout}}<li><small>BY WHO / ON : </small></li>{{/checkedout}}
 					<li>{{checkedoutto}} {{checkedout}}</li>
 					{{#tooldetails}}
 					<li><small>NOTES : </small>{{tooldetails}}</li>
